@@ -29,7 +29,7 @@ app.use(session({
 }))
 
 
-app.listen(process.env.PORT_NO, ()=> {
+app.listen(process.env.PORT_NO || 8080, ()=> {
     console.log('Server is listening at port 7080');
 })
 
